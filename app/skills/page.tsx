@@ -6,9 +6,9 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { skillGroups } from "@/data/skills";
 
 export const metadata: Metadata = {
-  title: "Skills",
+  title: "Capabilities",
   description:
-    "Technical skills across frontend, backend, database, cloud, DevOps, architecture, testing, and UI/UX for Umer Farooq.",
+    "Technical capabilities across frontend, backend, database, cloud, DevOps, architecture, testing, and UI/UX at UAI Technologies.",
   alternates: { canonical: "/skills" },
 };
 
@@ -18,7 +18,7 @@ export default function SkillsPage() {
       <section className="pt-16 pb-10 md:pt-24">
         <Container className="max-w-3xl">
           <Reveal>
-            <SectionLabel>Skills</SectionLabel>
+            <SectionLabel>Capabilities</SectionLabel>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               Tools of the trade
             </h1>

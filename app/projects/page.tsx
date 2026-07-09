@@ -9,9 +9,9 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { projects, additionalProjects } from "@/data/projects";
 
 export const metadata: Metadata = {
-  title: "Projects",
+  title: "Case Studies",
   description:
-    "Case studies covering government market systems, HR platforms, and financial recovery software built by Umer Farooq.",
+    "Case studies covering government market systems, HR platforms, and financial recovery software built by UAI Technologies.",
   alternates: { canonical: "/projects" },
 };
 
@@ -21,7 +21,7 @@ export default function ProjectsPage() {
       <section className="pt-16 pb-10 md:pt-24">
         <Container className="max-w-3xl">
           <Reveal>
-            <SectionLabel>Projects</SectionLabel>
+            <SectionLabel>Case Studies</SectionLabel>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               Case studies from real, shipped systems
             </h1>

@@ -7,24 +7,30 @@ export function ContactCTA() {
     <section className="py-20 md:py-28">
       <Container>
         <Reveal>
-          <div className="glass relative overflow-hidden rounded-3xl px-8 py-16 text-center sm:px-16">
-            <div
-              className="pointer-events-none absolute -top-24 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-primary/30 blur-[100px]"
-              aria-hidden="true"
-            />
-            <h2 className="relative font-display text-3xl font-semibold tracking-tight sm:text-4xl">
-              Have a system worth digitizing?
+          <div className="border border-border-strong bg-[var(--color-invert-bg)] px-8 py-16 text-center text-[var(--color-invert-text)] sm:px-16">
+            <h2 className="font-serif-display text-3xl font-medium tracking-tight sm:text-4xl">
+              Have a process worth digitizing?
             </h2>
-            <p className="relative mx-auto mt-4 max-w-xl text-muted">
+            <p className="mx-auto mt-4 max-w-xl text-[var(--color-invert-text)]/70">
               Let&apos;s talk about what&apos;s slow, manual, or fragile in your
-              current process — and what it would take to fix it properly.
+              current operations — and what a properly built system would
+              take to deliver.
             </p>
-            <div className="relative mt-8 flex flex-wrap items-center justify-center gap-4">
-              <Button href="/contact" variant="primary" showArrow>
-                Book Consultation
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+              <Button
+                href="/contact"
+                variant="secondary"
+                showArrow
+                className="border-[var(--color-invert-text)]/25 text-[var(--color-invert-text)] hover:bg-[var(--color-invert-text)]/10"
+              >
+                Schedule a Discovery Call
               </Button>
-              <Button href="/projects" variant="secondary">
-                See the work first
+              <Button
+                href="/projects"
+                variant="ghost"
+                className="text-[var(--color-invert-text)]/70 hover:text-[var(--color-invert-text)]"
+              >
+                See our case studies
               </Button>
             </div>
           </div>

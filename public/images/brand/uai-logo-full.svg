@@ -1,0 +1,10 @@
+<svg width="220" height="48" viewBox="0 0 220 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="UAI Technologies">
+  <rect x="0" y="0" width="48" height="48" rx="10" fill="#14171f" />
+  <rect x="0.5" y="0.5" width="47" height="47" rx="9.5" fill="none" stroke="rgba(242,240,233,0.14)" stroke-width="1" />
+  <path d="M15 15V29C15 32.3137 17.6863 35 21 35H27C30.3137 35 33 32.3137 33 29V15"
+    fill="none" stroke="#f2f0e9" stroke-width="2.6" stroke-linecap="square" />
+  <rect x="22.8" y="15" width="2.4" height="9" fill="#c9a468" />
+
+  <text x="58" y="22" font-family="Georgia, 'Times New Roman', serif" font-weight="600" font-size="17" letter-spacing="0.2" fill="#14171f">UAI Technologies</text>
+  <text x="58" y="36" font-family="Arial, sans-serif" font-weight="500" font-size="9" letter-spacing="2.4" fill="#82858e">SOFTWARE CONSULTING</text>
+</svg>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, Phone, Linkedin, MapPin } from "lucide-react";
 import { Container } from "@/components/ui/container";
@@ -8,12 +9,21 @@ export function Footer() {
     <footer className="border-t border-border bg-bg-soft">
       <Container className="grid gap-10 py-16 md:grid-cols-[1.4fr_1fr_1fr]">
         <div>
-          <Link href="/" className="font-display text-lg font-semibold text-text">
-            Umer<span className="text-accent">.</span>Farooq
+          <Link href="/" className="flex items-center gap-2.5" aria-label={`${site.name} — Home`}>
+            <Image
+              src={site.logoMark}
+              alt=""
+              width={32}
+              height={32}
+              className="size-8 rounded-lg"
+            />
+            <span className="font-display text-lg font-semibold text-text">
+              UAI<span className="text-accent">.</span>Technologies
+            </span>
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted">
-            {site.tagline} Building government, HR, and fintech platforms with
-            ASP.NET, React, and SQL Server.
+            {site.tagline} We build ASP.NET business applications, HR systems,
+            and ERP platforms for growing companies.
           </p>
           <div className="mt-6 flex flex-col gap-2 text-sm text-muted">
             <a href={`mailto:${site.email}`} className="inline-flex items-center gap-2 hover:text-text">
@@ -73,7 +83,7 @@ export function Footer() {
 
       <Container className="flex flex-col items-center justify-between gap-4 border-t border-border py-6 text-xs text-muted-2 md:flex-row">
         <p>© {new Date().getFullYear()} {site.name}. All rights reserved.</p>
-        <p>Built with Next.js, TypeScript & Tailwind CSS.</p>
+        <p>Custom business software, built and supported end to end.</p>
       </Container>
     </footer>
   );

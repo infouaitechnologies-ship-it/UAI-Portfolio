@@ -12,27 +12,27 @@ const faqs = [
   {
     question: "What kind of projects do you take on?",
     answer:
-      "Enterprise and business-critical systems — government platforms, HR and workforce tools, financial/recovery systems, and healthcare scheduling — where the backend, data model, and reliability matter as much as the interface.",
+      "Business-critical systems — ASP.NET web applications, HR and workforce tools, inventory and ERP platforms, government systems, and financial/recovery software — where the backend, data model, and reliability matter as much as the interface.",
   },
   {
     question: "Do you work with clients outside Pakistan?",
     answer:
-      "Yes. I've worked directly with U.S.-based collection agencies on the Qontango platform, and I'm set up to work async across time zones with clear milestones and regular check-ins.",
+      "Yes. We've worked directly with U.S.-based collection agencies on the Qontango platform, and we're set up to work async across time zones with clear milestones and regular check-ins.",
   },
   {
     question: "What does your tech stack look like?",
     answer:
-      "Backend work is primarily ASP.NET (Core & MVC), C#, and SQL Server, often with Dapper or Entity Framework. On the frontend I use React, and this site itself is built with Next.js 15, TypeScript, and Tailwind CSS.",
+      "Backend work is primarily ASP.NET (Core & MVC), C#, and SQL Server, often with Dapper or Entity Framework. On the frontend we use React, and this site itself is built with Next.js 15, TypeScript, and Tailwind CSS.",
   },
   {
     question: "Do you handle the whole project, or just development?",
     answer:
-      "On e-Auction I owned everything — architecture, database, backend, frontend integration, and production support. On team projects like Hrango and Qontango, I've owned specific modules end to end within a larger codebase. Either way, I can scope, build, and support.",
+      "On e-Auction we owned everything — architecture, database, backend, frontend integration, and production support. On team projects like Hrango and Qontango, we've owned specific modules end to end within a larger codebase. Either way, we can scope, build, and support your system.",
   },
   {
     question: "How do we get started?",
     answer:
-      "Book a consultation through the contact page. I'll ask about your current process, where it's breaking down, and what a working first version should cover — then follow up with a scoped plan.",
+      "Book a consultation through the contact page. We'll ask about your current process, where it's breaking down, and what a working first version should cover — then follow up with a scoped plan.",
   },
 ];
 

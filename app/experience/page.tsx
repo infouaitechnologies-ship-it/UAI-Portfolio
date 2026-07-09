@@ -8,9 +8,9 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { experience, education, award } from "@/data/experience";
 
 export const metadata: Metadata = {
-  title: "Experience",
+  title: "Track Record",
   description:
-    "Professional experience timeline for Umer Farooq — full-stack software engineer working across government, HR, and fintech platforms.",
+    "The engineering track record behind UAI Technologies — delivering government, HR, and fintech platforms with ASP.NET, React, and SQL Server.",
   alternates: { canonical: "/experience" },
 };
 
@@ -20,10 +20,15 @@ export default function ExperiencePage() {
       <section className="pt-16 pb-10 md:pt-24">
         <Container className="max-w-3xl">
           <Reveal>
-            <SectionLabel>Experience</SectionLabel>
+            <SectionLabel>Track Record</SectionLabel>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               Where the work happened
             </h1>
+            <p className="mt-6 text-lg leading-relaxed text-muted">
+              The engineering background that shaped how UAI Technologies
+              builds — delivered across government, HR, and fintech systems
+              before we brought that experience in-house.
+            </p>
           </Reveal>
         </Container>
       </section>

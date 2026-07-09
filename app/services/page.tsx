@@ -11,7 +11,7 @@ import { services } from "@/data/services";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Custom software, government systems, HR platforms, financial recovery systems, and backend architecture — services offered by Umer Farooq.",
+    "ASP.NET web application development and business management systems — HR, inventory, and ERP — delivered by UAI Technologies.",
   alternates: { canonical: "/services" },
 };
 
@@ -23,13 +23,13 @@ export default function ServicesPage() {
           <Reveal>
             <SectionLabel>Services</SectionLabel>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-              What I build
+              What we build
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted">
-              Every service below is grounded in something I&apos;ve actually
+              Every service below is grounded in something we&apos;ve actually
               shipped — not a generic capability list. If your project doesn&apos;t
-              fit neatly into one category, that&apos;s normal; most real systems
-              don&apos;t.
+              fit neatly into one category, that&apos;s normal; most real business
+              systems don&apos;t.
             </p>
           </Reveal>
         </Container>
@@ -41,12 +41,24 @@ export default function ServicesPage() {
             {services.map((service, i) => (
               <Reveal key={service.title} delay={(i % 2) * 0.1}>
                 <GlassCard className="flex h-full flex-col p-7">
-                  <h2 className="font-display text-xl font-semibold">
+                  <h2 className="font-display text-xl font-medium">
                     {service.title}
                   </h2>
-                  <p className="mt-3 text-sm leading-relaxed text-muted">
+
+                  <p className="mt-4 text-xs font-semibold uppercase tracking-[0.15em] text-muted-2">
+                    The problem
+                  </p>
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted">
+                    {service.problem}
+                  </p>
+
+                  <p className="mt-4 text-xs font-semibold uppercase tracking-[0.15em] text-muted-2">
+                    Our approach
+                  </p>
+                  <p className="mt-1.5 text-sm leading-relaxed text-muted">
                     {service.description}
                   </p>
+
                   <ul className="mt-5 flex flex-1 flex-col gap-2">
                     {service.bullets.map((bullet) => (
                       <li
@@ -58,6 +70,16 @@ export default function ServicesPage() {
                       </li>
                     ))}
                   </ul>
+
+                  <div className="mt-6 border-t border-border pt-4">
+                    <p className="text-xs font-semibold uppercase tracking-[0.15em] text-muted-2">
+                      Business outcome
+                    </p>
+                    <p className="mt-1.5 text-sm font-medium text-text">
+                      {service.outcome}
+                    </p>
+                  </div>
+
                   {service.relatedProjectSlug && (
                     <Link
                       href={`/projects/${service.relatedProjectSlug}`}
@@ -82,11 +104,11 @@ export default function ServicesPage() {
                 Not sure which service fits?
               </h2>
               <p className="max-w-lg text-muted">
-                Tell me what&apos;s slow or manual in your process right now —
-                I&apos;ll help you figure out the right scope.
+                Tell us what&apos;s slow or manual in your process right now —
+                we&apos;ll help you figure out the right scope.
               </p>
               <Button href="/contact" variant="primary" showArrow>
-                Book Consultation
+                Schedule a Discovery Call
               </Button>
             </GlassCard>
           </Reveal>

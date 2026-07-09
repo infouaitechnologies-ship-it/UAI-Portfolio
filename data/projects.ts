@@ -103,7 +103,7 @@ export const projects: Project[] = [
     duration: "Aug 2024 — Mar 2025",
     featured: true,
     summary:
-      "A comprehensive HRMS handling attendance, payroll, shift scheduling, employee ID cards, and staff requests — I owned the Employee Card, Shift Management, and Request Management modules end to end.",
+      "A comprehensive HRMS handling attendance, payroll, shift scheduling, employee ID cards, and staff requests — we owned the Employee Card, Shift Management, and Request Management modules end to end.",
     problem: [
       "HR teams needed a single system for attendance, payroll, and scheduling instead of scattered spreadsheets.",
       "Print-ready, branded employee ID cards had to be generated on demand.",
@@ -111,7 +111,7 @@ export const projects: Project[] = [
       "Employee requests (leave, changes, approvals) needed a trackable workflow instead of email chains.",
     ],
     solution:
-      "A modular HRMS where I built responsive, print-friendly employee cards with QR/barcode support, a shift management system with built-in validation, and a request management workflow with history tracking and administrator approvals — all wired into the shared attendance, payroll, and announcements platform.",
+      "A modular HRMS where we built responsive, print-friendly employee cards with QR/barcode support, a shift management system with built-in validation, and a request management workflow with history tracking and administrator approvals — all wired into the shared attendance, payroll, and announcements platform.",
     modules: [
       "Employee Card Design & Generation",
       "Shift Management",
@@ -130,7 +130,7 @@ export const projects: Project[] = [
       "Handled frontend validation and integration with the backend API.",
     ],
     architecture:
-      "Server-rendered ASP.NET MVC with Razor views on the frontend, backed by Entity Framework over SQL Server. The modules I owned — employee cards, shift management, and requests — each pair a Razor UI with validated form submissions and role-aware approval logic on the backend, so HR staff and employees see the same data through different permission lenses.",
+      "Server-rendered ASP.NET MVC with Razor views on the frontend, backed by Entity Framework over SQL Server. The modules we owned — employee cards, shift management, and requests — each pair a Razor UI with validated form submissions and role-aware approval logic on the backend, so HR staff and employees see the same data through different permission lenses.",
     challenges: [
       {
         title: "Print-friendly employee cards",
@@ -182,7 +182,7 @@ export const projects: Project[] = [
     duration: "Apr 2025 — Oct 2025",
     featured: true,
     summary:
-      "A large-scale platform used by U.S. collection agencies to manage the full debt-recovery lifecycle for banks and lenders — I built and enhanced core backend modules spanning leads, sales, collections, and reporting.",
+      "A large-scale platform used by U.S. collection agencies to manage the full debt-recovery lifecycle for banks and lenders — we built and enhanced core backend modules spanning leads, sales, collections, and reporting.",
     problem: [
       "Collection agencies needed to manage relationships with multiple bank and lending clients in one place.",
       "Debtor tracking and recovery operations had to scale to enterprise transaction volumes.",
@@ -265,10 +265,10 @@ export const additionalProjects: LightProject[] = [
     techStack: ["React.js", "Tailwind CSS", "PHP", "SQL"],
   },
   {
-    title: "Personal Portfolio (v1)",
+    title: "Business Web Presence (Early Build)",
     period: "2024",
     description:
-      "An earlier personal portfolio site, built and deployed independently as a first showcase of projects and skills.",
+      "An early web platform built and deployed independently, used as a first showcase of full-stack delivery capability ahead of larger client engagements.",
     techStack: ["Next.js", "Tailwind CSS", "Vercel"],
     link: "https://portfolio-peach-nine-16.vercel.app/",
   },

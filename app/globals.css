@@ -1,49 +1,92 @@
 @import "tailwindcss";
 
-:root {
-  --color-bg: #050816;
-  --color-bg-soft: #0a0f24;
-  --color-surface: #0d1330;
-  --color-primary: #4f46e5;
-  --color-primary-soft: #6366f1;
-  --color-accent: #06b6d4;
-  --color-violet: #8b5cf6;
-  --color-text: #f8fafc;
-  --color-muted: #94a3b8;
-  --color-muted-2: #64748b;
-  --color-border: rgba(148, 163, 184, 0.14);
-  --color-glass: rgba(13, 19, 48, 0.55);
+/* =====================================================================
+   UAI Technologies — Design Tokens
+   A premium, editorial system built on two neutrals (ink + paper) and
+   a single restrained accent (brass). Light and dark are each designed
+   on purpose, not inverted from one another.
+   ===================================================================== */
 
-  --font-display: var(--font-space-grotesk);
+:root {
+  color-scheme: light;
+
+  --color-bg: #faf9f5;
+  --color-bg-soft: #f2f0e9;
+  --color-surface: #ffffff;
+  --color-surface-2: #f4f2ec;
+
+  --color-primary: #14171f;       /* ink — headings, primary button bg */
+  --color-primary-soft: #363a45;
+  --color-accent: #8a6a35;        /* brass — used sparingly */
+  --color-accent-soft: #b7935a;
+
+  --color-text: #14171f;
+  --color-muted: #52565f;
+  --color-muted-2: #82858e;
+
+  --color-border: rgba(20, 23, 31, 0.12);
+  --color-border-strong: rgba(20, 23, 31, 0.22);
+
+  --color-invert-bg: #14171f;
+  --color-invert-text: #faf9f5;
+
+  --shadow-card: 0 1px 2px rgba(20, 23, 31, 0.04), 0 12px 24px -16px rgba(20, 23, 31, 0.12);
+  --shadow-card-hover: 0 1px 2px rgba(20, 23, 31, 0.05), 0 20px 32px -16px rgba(20, 23, 31, 0.16);
+
+  --font-display: var(--font-fraunces);
   --font-body: var(--font-inter);
+}
+
+.dark {
+  color-scheme: dark;
+
+  --color-bg: #0b0d12;
+  --color-bg-soft: #12141b;
+  --color-surface: #15171f;
+  --color-surface-2: #1a1d26;
+
+  --color-primary: #f4f2ec;
+  --color-primary-soft: #d8d4c8;
+  --color-accent: #c9a468;
+  --color-accent-soft: #a9854f;
+
+  --color-text: #f2f0e9;
+  --color-muted: #a3a7b3;
+  --color-muted-2: #6d7180;
+
+  --color-border: rgba(242, 240, 233, 0.1);
+  --color-border-strong: rgba(242, 240, 233, 0.18);
+
+  --color-invert-bg: #f2f0e9;
+  --color-invert-text: #0b0d12;
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.2), 0 12px 24px -16px rgba(0, 0, 0, 0.45);
+  --shadow-card-hover: 0 1px 2px rgba(0, 0, 0, 0.3), 0 20px 32px -16px rgba(0, 0, 0, 0.55);
 }
 
 @theme inline {
   --color-bg: var(--color-bg);
   --color-bg-soft: var(--color-bg-soft);
   --color-surface: var(--color-surface);
+  --color-surface-2: var(--color-surface-2);
   --color-primary: var(--color-primary);
   --color-primary-soft: var(--color-primary-soft);
   --color-accent: var(--color-accent);
-  --color-violet: var(--color-violet);
+  --color-accent-soft: var(--color-accent-soft);
   --color-text: var(--color-text);
   --color-muted: var(--color-muted);
   --color-muted-2: var(--color-muted-2);
   --color-border: var(--color-border);
+  --color-border-strong: var(--color-border-strong);
   --font-display: var(--font-display);
   --font-body: var(--font-body);
 
-  --animate-float: float 7s ease-in-out infinite;
-  --animate-pulse-slow: pulse-slow 4s ease-in-out infinite;
-  --animate-marquee: marquee 32s linear infinite;
+  --animate-fade-up: fade-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-marquee: marquee 40s linear infinite;
 
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-14px); }
-  }
-  @keyframes pulse-slow {
-    0%, 100% { opacity: 0.5; }
-    50% { opacity: 1; }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
   }
   @keyframes marquee {
     from { transform: translateX(0); }
@@ -60,42 +103,53 @@ body {
   color: var(--color-text);
   font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+  letter-spacing: -0.01em;
 }
 
 ::selection {
-  background: var(--color-primary);
-  color: white;
+  background: var(--color-accent);
+  color: var(--color-invert-text);
 }
 
 :focus-visible {
   outline: 2px solid var(--color-accent);
   outline-offset: 3px;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
-.glass {
-  background: var(--color-glass);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+/* Card surface — a quiet, bordered panel. No blur, no glow. */
+.card-surface {
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.text-gradient {
-  background: linear-gradient(120deg, #ffffff 0%, #c7d2fe 45%, var(--color-accent) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.card-surface:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-card-hover);
 }
 
-.grid-glow {
+/* A restrained, single-tone display treatment — no rainbow gradients. */
+.text-display {
+  color: var(--color-text);
+}
+
+/* Faint architectural grid, used only as a quiet backdrop cue. */
+.grid-texture {
   background-image:
-    linear-gradient(to right, rgba(148, 163, 184, 0.06) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
-  background-size: 56px 56px;
+    linear-gradient(to right, var(--color-border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-border) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+.font-serif-display {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
 }
 
 @media (prefers-reduced-motion: reduce) {

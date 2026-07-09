@@ -47,7 +47,7 @@ export default async function ProjectDetailPage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "CreativeWork",
     name: project.title,
-    creator: { "@type": "Person", name: site.name },
+    creator: { "@type": "Organization", name: site.name },
     about: project.industry,
     description: project.summary,
   };
@@ -67,7 +67,7 @@ export default async function ProjectDetailPage({ params }: Props) {
               className="inline-flex items-center gap-2 text-sm text-muted hover:text-text"
             >
               <ArrowLeft className="size-4" />
-              All projects
+              All case studies
             </Link>
 
             <div className="mt-6 flex flex-wrap items-center gap-3">
@@ -161,7 +161,7 @@ export default async function ProjectDetailPage({ params }: Props) {
             </Reveal>
 
             <Reveal>
-              <SectionLabel>My Responsibilities</SectionLabel>
+              <SectionLabel>Our Responsibilities</SectionLabel>
               <ul className="mt-5 flex flex-col gap-3">
                 {project.responsibilities.map((item) => (
                   <li key={item} className="flex items-start gap-3 text-muted">
@@ -247,7 +247,7 @@ export default async function ProjectDetailPage({ params }: Props) {
                 Let&apos;s talk about what your system needs.
               </p>
               <Button href="/contact" variant="primary" className="mt-5 w-full justify-center" showArrow>
-                Book Consultation
+                Schedule a Discovery Call
               </Button>
             </GlassCard>
           </div>

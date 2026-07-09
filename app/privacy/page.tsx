@@ -5,7 +5,7 @@ import { site } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Privacy policy for umerfarooq.dev.",
+  description: "Privacy policy for uaitechnologies.dev.",
   alternates: { canonical: "/privacy" },
   robots: { index: true, follow: true },
 };
@@ -29,7 +29,7 @@ export default function PrivacyPage() {
               This site does not use tracking cookies or third-party
               analytics by default. If you use the contact form, the details
               you enter (name, email, project description) are sent directly
-              to my email via your own email client — they are not stored on
+              to our team via email — they are not stored on
               a server by this site.
             </p>
           </div>

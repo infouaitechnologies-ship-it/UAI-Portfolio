@@ -1,0 +1,9 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="UAI Technologies logo mark">
+  <rect x="1" y="1" width="62" height="62" rx="12" fill="#14171f" />
+  <rect x="1" y="1" width="62" height="62" rx="12" fill="none" stroke="rgba(242,240,233,0.14)" stroke-width="1" />
+
+  <!-- monogram: a single deliberate mark, not a network graphic -->
+  <path d="M20 20V38C20 42.4183 23.5817 46 28 46H36C40.4183 46 44 42.4183 44 38V20"
+    fill="none" stroke="#f2f0e9" stroke-width="3.4" stroke-linecap="square" />
+  <rect x="30.4" y="20" width="3.2" height="12" fill="#c9a468" />
+</svg>

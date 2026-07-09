@@ -10,7 +10,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Umer Farooq is a full-stack engineer from Lahore, Pakistan, building government, HR, and fintech platforms with ASP.NET, React, and SQL Server.",
+    "UAI Technologies is a software development company based in Lahore, Pakistan, building custom ASP.NET web applications and business management systems.",
   alternates: { canonical: "/about" },
 };
 
@@ -18,17 +18,17 @@ const values = [
   {
     title: "Own the whole system",
     description:
-      "From SQL Server schema to the screen a user clicks on — I think in systems, not just features.",
+      "From SQL Server schema to the screen a user clicks on — we think in systems, not just features.",
   },
   {
     title: "Reliability over flash",
     description:
-      "Government and financial platforms don't get to fail quietly. I build for correctness first.",
+      "Government and financial platforms don't get to fail quietly. We build for correctness first.",
   },
   {
     title: "Ship, then support",
     description:
-      "Production support and debugging are part of the job, not an afterthought handed to someone else.",
+      "Production support and maintenance are part of the engagement, not an afterthought handed off elsewhere.",
   },
 ];
 
@@ -40,23 +40,23 @@ export default function AboutPage() {
           <Reveal>
             <SectionLabel>About</SectionLabel>
             <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-              Software engineer, based in Lahore, working on systems that
-              governments and enterprises depend on.
+              A software company building the systems businesses depend on.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-muted">
-              I&apos;m {site.name}, a full-stack engineer specializing in
-              ASP.NET and React. My work spans a government market-management
-              platform I designed and built independently, an HR system used
-              to manage attendance and staff records, and a debt-recovery
-              platform serving U.S. collection agencies — each one built
-              around a real, unglamorous operational problem.
+              Founded by Umer Farooq, {site.name} specializes in custom
+              ASP.NET web applications and business management software. Our
+              work spans a government market-management platform built and
+              deployed end to end, HR systems used to manage attendance and
+              staff records, and a debt-recovery platform serving U.S.
+              collection agencies — each one built around a real,
+              unglamorous operational problem.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted">
-              I care about problem-solving and clean architecture more than
-              trends. Most of my work sits on the backend and database layer,
-              which means I spend a lot of time thinking about what happens
-              when a system is under real load, not just what it looks like
-              in a demo.
+              We care about problem-solving and clean architecture more than
+              trends. Most of our work sits on the backend and database
+              layer, which means we spend a lot of time thinking about what
+              happens when a system is under real load, not just what it
+              looks like in a demo.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Button href="/projects" variant="primary" showArrow>
@@ -70,7 +70,10 @@ export default function AboutPage() {
 
           <Reveal delay={0.15}>
             <GlassCard className="p-8">
-              <h2 className="font-display text-lg font-semibold">Education</h2>
+              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-2">
+                Founder Background
+              </p>
+              <h2 className="mt-4 font-display text-lg font-semibold">Education</h2>
               <p className="mt-2 text-sm text-muted">{education.degree}</p>
               <p className="text-sm text-muted">{education.institution}</p>
               <p className="mt-1 text-xs text-muted-2">
@@ -98,7 +101,7 @@ export default function AboutPage() {
       <section className="py-16 md:py-24">
         <Container>
           <Reveal>
-            <SectionLabel>What I Value</SectionLabel>
+            <SectionLabel>What We Value</SectionLabel>
             <h2 className="mt-4 max-w-lg text-3xl font-semibold tracking-tight">
               Principles that show up in the code
             </h2>

@@ -10,7 +10,7 @@ import { site } from "@/data/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Get in touch with Umer Farooq to discuss a custom software project, government platform, or enterprise system.",
+    "Get in touch with UAI Technologies to discuss a custom software project, business management system, or enterprise platform.",
   alternates: { canonical: "/contact" },
 };
 
@@ -24,8 +24,8 @@ export default function ContactPage() {
             Let&apos;s talk about your project
           </h1>
           <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted">
-            Whether it&apos;s a new system or fixing a fragile one, tell me
-            what you&apos;re working with and I&apos;ll follow up with next
+            Whether it&apos;s a new system or fixing a fragile one, tell us
+            what you&apos;re working with and we&apos;ll follow up with next
             steps.
           </p>
 

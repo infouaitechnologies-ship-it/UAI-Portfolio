@@ -51,7 +51,9 @@ export type SkillGroup = {
 
 export type Service = {
   title: string;
+  problem: string;
   description: string;
   bullets: string[];
+  outcome: string;
   relatedProjectSlug?: string;
 };
