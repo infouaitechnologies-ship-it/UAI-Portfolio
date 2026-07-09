@@ -7,7 +7,8 @@ export const site = {
   description:
     "UAI Technologies is a software consulting practice that designs and builds custom enterprise applications — ERP, HR, inventory, and financial systems — replacing manual processes with software built around how your business actually operates.",
   url: "https://uaitechnologies.dev",
-  email: "contact@uaitechnologies.dev",
+  email: "info.uaitechnologies@gmail.com
+",
   phones: ["+92 300 6143626", "+92 316 6774322"],
   location: "Lahore, Punjab, Pakistan",
   linkedin: "https://linkedin.com/in/umer-farooq-973b96235",
