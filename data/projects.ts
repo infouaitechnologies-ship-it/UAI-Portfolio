@@ -3,14 +3,14 @@ import { LightProject, Project } from "@/types";
 export const projects: Project[] = [
   {
     slug: "e-auction-market-management-system",
-    title: "e-Auction — Government Market Management System",
+    title: "e-Auction —  Market Management System",
     shortTitle: "e-Auction",
     industry: "Government & Public Sector · Agriculture",
     role: "Sole Full-Stack Developer & System Architect",
     duration: "Nov 2025 — Present",
     featured: true,
     summary:
-      "A government-grade market management platform that digitizes wholesale agricultural market (Mandi) operations for Punjab — built independently end to end, from database architecture to live electronic auctions, accounting, and tax collection.",
+      "A market management platform that digitizes wholesale agricultural market (Mandi) operations for Punjab — built independently end to end, from database architecture to live electronic auctions, accounting, and tax collection.",
     problem: [
       "Manual market operations caused delays and recording errors.",
       "Auction and pricing had limited transparency for sellers and buyers.",
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     liveNote:
       "Live production system deployed for Punjab's wholesale agricultural markets, built while working at the Punjab Information Technology Board.",
     images: [
-      { src: "/images/projects/eauction/home.webp", alt: "e-Auction platform landing page", caption: "Public-facing landing page for the Mandi e-Auction platform." },
+      { src: "/images/projects/eauction/dashboard.webp", alt: "e-Auction platform landing page", caption: "Public-facing landing page for the Mandi e-Auction platform." },
       { src: "/images/projects/eauction/dashboard.webp", alt: "e-Auction admin dashboard", caption: "Central administration dashboard with market KPIs." },
       { src: "/images/projects/eauction/auction-overview.webp", alt: "Live e-auction overview screen", caption: "Live e-auction overview showing active lots and bidding status." },
       { src: "/images/projects/eauction/lot-wise-list.webp", alt: "Lot-wise auction listing", caption: "Lot-wise auction list with commodity and pricing detail." },
