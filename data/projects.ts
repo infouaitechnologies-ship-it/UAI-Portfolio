@@ -1,99 +1,99 @@
 import { LightProject, Project } from "@/types";
 
 export const projects: Project[] = [
-  {
-    slug: "e-auction-market-management-system",
-    title: "e-Auction —  Market Management System",
-    shortTitle: "e-Auction",
-    industry: "Government & Public Sector · Agriculture",
-    role: "Sole Full-Stack Developer & System Architect",
-    duration: "Nov 2025 — Present",
-    featured: true,
-    summary:
-      "A market management platform that digitizes wholesale agricultural market (Mandi) operations for Punjab — built independently end to end, from database architecture to live electronic auctions, accounting, and tax collection.",
-    problem: [
-      "Manual market operations caused delays and recording errors.",
-      "Auction and pricing had limited transparency for sellers and buyers.",
-      "Tax collection and financial tracking were difficult to reconcile.",
-      "Market records and reporting were fragmented across paper and spreadsheets.",
-      "Government stakeholders needed a secure, centralized system of record.",
-    ],
-    solution:
-      "An end-to-end digital ecosystem that centralizes market administration, commodity movement, live e-auctions, accounting, taxation, and role-based reporting into a single enterprise platform — with vehicle and consignment tracking layered on top for full chain-of-custody visibility.",
-    modules: [
-      "User & Role Management",
-      "Market Administration",
-      "Commodity Management",
-      "Market In / Market Out & Weighbridge Integration",
-      "Live e-Auction Dashboard",
-      "Vehicle & Consignment Tracking",
-      "Price Management",
-      "Accounting & Financial Records",
-      "Tax Collection",
-      "Reports & Audit Logs",
-    ],
-    responsibilities: [
-      "Designed the complete SQL Server database architecture from scratch.",
-      "Designed the system architecture and end-to-end business workflows.",
-      "Built the backend using ASP.NET Core MVC and C#.",
-      "Implemented high-performance data access with Dapper.",
-      "Built role-based authentication and authorization (RBAC).",
-      "Wrote the APIs and core business logic powering every module.",
-      "Optimized SQL queries and stored procedures for reporting at scale.",
-      "Integrated the frontend with backend services and third-party weighbridge hardware.",
-      "Owned testing, debugging, and live production support.",
-    ],
-    architecture:
-      "A modular ASP.NET Core MVC application backed by a normalized SQL Server schema, with Dapper handling high-throughput data access and stored procedures carrying the heavier reporting and reconciliation logic. Role- and policy-based authorization gates every module, so market administrators, auctioneers, commission agents, and tax officers each see only what their role permits — a requirement for a system handling live government financial transactions.",
-    challenges: [
-      {
-        title: "Real-time auction integrity",
-        detail:
-          "Live e-auctions need every bid reflected instantly and accurately, with no double-booking of lots — this drove the live auction dashboard and lot-wise tracking design.",
-      },
-      {
-        title: "Hardware integration",
-        detail:
-          "Weighbridge integration meant reconciling physical sensor data with digital consignment records without manual re-entry.",
-      },
-      {
-        title: "Financial accuracy at scale",
-        detail:
-          "Accounting, tax collection, and commission-agent reporting all had to reconcile against the same underlying transactions — solved with carefully normalized schemas and stored-procedure-driven aggregation.",
-      },
-    ],
-    outcome: [
-      "Digitized a previously manual, paper-based government market process end to end.",
-      "Improved operational efficiency and pricing transparency for buyers and sellers.",
-      "Streamlined accounting and tax collection into a single reconciled system.",
-      "Gave administrators centralized reporting and audit trails across every market.",
-      "Delivered as a maintainable, scalable platform built and supported by one engineer.",
-    ],
-    techStack: [
-      "ASP.NET Core MVC",
-      "C#",
-      ".NET",
-      "Dapper",
-      "SQL Server",
-      "Stored Procedures",
-      "SignalR",
-      "Bootstrap",
-      "JavaScript",
-      "jQuery",
-      "Git",
-    ],
-    liveNote:
-      "Live production system deployed for Punjab's wholesale agricultural markets, built while working at the Punjab Information Technology Board.",
-    images: [
-      { src: "/images/projects/eauction/dashboard.webp", alt: "e-Auction platform landing page", caption: "Public-facing landing page for the Mandi e-Auction platform." },
-      { src: "/images/projects/eauction/dashboard.webp", alt: "e-Auction admin dashboard", caption: "Central administration dashboard with market KPIs." },
-      { src: "/images/projects/eauction/auction-overview.webp", alt: "Live e-auction overview screen", caption: "Live e-auction overview showing active lots and bidding status." },
-      { src: "/images/projects/eauction/lot-wise-list.webp", alt: "Lot-wise auction listing", caption: "Lot-wise auction list with commodity and pricing detail." },
-      { src: "/images/projects/eauction/weight-bridges.webp", alt: "Weighbridge integration screen", caption: "Weighbridge integration reconciling physical and digital consignment records." },
-      { src: "/images/projects/eauction/auction-analysis.webp", alt: "Auction analysis report with graphs", caption: "Auction analysis reporting with trend graphs for market officers." },
-      { src: "/images/projects/eauction/commission-agent.webp", alt: "Commission agent auctions report", caption: "Commission-agent auction report used for reconciliation and audit." },
-    ],
-  },
+  // {
+  //   slug: "e-auction-market-management-system",
+  //   title: "e-Auction —  Market Management System",
+  //   shortTitle: "e-Auction",
+  //   industry: "Government & Public Sector · Agriculture",
+  //   role: "Sole Full-Stack Developer & System Architect",
+  //   duration: "Nov 2025 — Present",
+  //   featured: true,
+  //   summary:
+  //     "A market management platform that digitizes wholesale agricultural market (Mandi) operations for Punjab — built independently end to end, from database architecture to live electronic auctions, accounting, and tax collection.",
+  //   problem: [
+  //     "Manual market operations caused delays and recording errors.",
+  //     "Auction and pricing had limited transparency for sellers and buyers.",
+  //     "Tax collection and financial tracking were difficult to reconcile.",
+  //     "Market records and reporting were fragmented across paper and spreadsheets.",
+  //     "Government stakeholders needed a secure, centralized system of record.",
+  //   ],
+  //   solution:
+  //     "An end-to-end digital ecosystem that centralizes market administration, commodity movement, live e-auctions, accounting, taxation, and role-based reporting into a single enterprise platform — with vehicle and consignment tracking layered on top for full chain-of-custody visibility.",
+  //   modules: [
+  //     "User & Role Management",
+  //     "Market Administration",
+  //     "Commodity Management",
+  //     "Market In / Market Out & Weighbridge Integration",
+  //     "Live e-Auction Dashboard",
+  //     "Vehicle & Consignment Tracking",
+  //     "Price Management",
+  //     "Accounting & Financial Records",
+  //     "Tax Collection",
+  //     "Reports & Audit Logs",
+  //   ],
+  //   responsibilities: [
+  //     "Designed the complete SQL Server database architecture from scratch.",
+  //     "Designed the system architecture and end-to-end business workflows.",
+  //     "Built the backend using ASP.NET Core MVC and C#.",
+  //     "Implemented high-performance data access with Dapper.",
+  //     "Built role-based authentication and authorization (RBAC).",
+  //     "Wrote the APIs and core business logic powering every module.",
+  //     "Optimized SQL queries and stored procedures for reporting at scale.",
+  //     "Integrated the frontend with backend services and third-party weighbridge hardware.",
+  //     "Owned testing, debugging, and live production support.",
+  //   ],
+  //   architecture:
+  //     "A modular ASP.NET Core MVC application backed by a normalized SQL Server schema, with Dapper handling high-throughput data access and stored procedures carrying the heavier reporting and reconciliation logic. Role- and policy-based authorization gates every module, so market administrators, auctioneers, commission agents, and tax officers each see only what their role permits — a requirement for a system handling live government financial transactions.",
+  //   challenges: [
+  //     {
+  //       title: "Real-time auction integrity",
+  //       detail:
+  //         "Live e-auctions need every bid reflected instantly and accurately, with no double-booking of lots — this drove the live auction dashboard and lot-wise tracking design.",
+  //     },
+  //     {
+  //       title: "Hardware integration",
+  //       detail:
+  //         "Weighbridge integration meant reconciling physical sensor data with digital consignment records without manual re-entry.",
+  //     },
+  //     {
+  //       title: "Financial accuracy at scale",
+  //       detail:
+  //         "Accounting, tax collection, and commission-agent reporting all had to reconcile against the same underlying transactions — solved with carefully normalized schemas and stored-procedure-driven aggregation.",
+  //     },
+  //   ],
+  //   outcome: [
+  //     "Digitized a previously manual, paper-based government market process end to end.",
+  //     "Improved operational efficiency and pricing transparency for buyers and sellers.",
+  //     "Streamlined accounting and tax collection into a single reconciled system.",
+  //     "Gave administrators centralized reporting and audit trails across every market.",
+  //     "Delivered as a maintainable, scalable platform built and supported by one engineer.",
+  //   ],
+  //   techStack: [
+  //     "ASP.NET Core MVC",
+  //     "C#",
+  //     ".NET",
+  //     "Dapper",
+  //     "SQL Server",
+  //     "Stored Procedures",
+  //     "SignalR",
+  //     "Bootstrap",
+  //     "JavaScript",
+  //     "jQuery",
+  //     "Git",
+  //   ],
+  //   liveNote:
+  //     "Live production system deployed for Punjab's wholesale agricultural markets, built while working at the Punjab Information Technology Board.",
+  //   images: [
+  //     { src: "/images/projects/eauction/dashboard.webp", alt: "e-Auction platform landing page", caption: "Public-facing landing page for the Mandi e-Auction platform." },
+  //     { src: "/images/projects/eauction/dashboard.webp", alt: "e-Auction admin dashboard", caption: "Central administration dashboard with market KPIs." },
+  //     { src: "/images/projects/eauction/auction-overview.webp", alt: "Live e-auction overview screen", caption: "Live e-auction overview showing active lots and bidding status." },
+  //     { src: "/images/projects/eauction/lot-wise-list.webp", alt: "Lot-wise auction listing", caption: "Lot-wise auction list with commodity and pricing detail." },
+  //     { src: "/images/projects/eauction/weight-bridges.webp", alt: "Weighbridge integration screen", caption: "Weighbridge integration reconciling physical and digital consignment records." },
+  //     { src: "/images/projects/eauction/auction-analysis.webp", alt: "Auction analysis report with graphs", caption: "Auction analysis reporting with trend graphs for market officers." },
+  //     { src: "/images/projects/eauction/commission-agent.webp", alt: "Commission agent auctions report", caption: "Commission-agent auction report used for reconciliation and audit." },
+  //   ],
+  // },
   {
     slug: "hrango-hr-management-system",
     title: "Hrango — Human Resource Management System",
